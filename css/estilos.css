@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 209, 226);
+}
+.player h3{
+    justify-content: center;
+    align-items: center;
+}
+.player_artist
+{
+    align-content: center;
+    text-align: center;
+    font-style: italic;
+ 
+}
+.player_song
+{
+    align-content: center;
+    text-align: center;
+    font-style: italic;
+}
+.controls{
+    width: 70%;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(155, 26, 112);
+    animation-name: cambiarColor;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-duration: 8s;
+    display: flex;
+}
+.cover{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.stop {
+    width: 1em;
+    height: 1em;
+}
+.cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    animation-name: girar;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-duration: 3s;
+
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes cambiarColor {
+    0%{
+        background-color: rgb(182, 46, 125);
+    }
+    20%{
+        background-color: rgb(235, 147, 115);
+    }
+    40%{
+        background-color: rgb(35, 97, 97);
+    }
+    60%{
+        background-color: rgb(120, 214, 96);
+    }
+    80%{
+        background-color: rgb(155, 114, 11);
+    }
+    100%{
+        background-color: rgb(123, 35, 182);
+    }
+}
